@@ -21,6 +21,9 @@ header {
     margin: 0;
     font-family: 'Skranji', cursive;
 }
+.headeraH1 nav {
+    position: sticky; top: 0;
+}
 
 .banner {
     width: 100%;
