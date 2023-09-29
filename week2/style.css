@@ -145,25 +145,43 @@ main h3 {
 .cta-container {
     text-align: center;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #a7289df8;
     margin-top: 30px;
-
+    color: #fff;
+    border: 1px solid #0d0d0d;
 }
+.cta-container h2 {
+    font-size: 28px; 
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+.cta-container p {
+    font-size: 18px; 
+    font-weight: normal; 
+    margin-bottom: 20px;
+}
+
 
 .cta-button {
    display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #090444;
     color: #ffffff;
+    border: 2px solid #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
     margin-top: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #7640B3;
+    background-color: #77277a;
+    color: #fff;
+    border-color: #fff;
 }
 
 /* Footer Styles */
