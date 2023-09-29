@@ -20,11 +20,9 @@ header {
 .headeraH1 {
     margin: 0;
     font-family: 'Skranji', cursive;
-    
-}
-.headeraH1 nav {
     position: sticky; top: 0;
 }
+
 
 .banner {
     width: 100%;
@@ -46,6 +44,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
+    position: sticky; top: 0;
 }
 
 nav li {
