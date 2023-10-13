@@ -159,7 +159,7 @@ arrows) */
   let SlideIndex = 1;
   showSlides(slideIndex);
   function plusSlides(n){
-    showSlides(slideIndex =+ n);
+    showSlides(slideIndex += n);
   }
   // Function to jump to specific slide in slideshow
   function currentSlide(n) {
@@ -167,7 +167,7 @@ arrows) */
   }
   function showSlides(n){
     let i;
-  }
+  
   let slides = document.getElementsByClassName("mySlides");
   //let dots = document.getElementsByClassName("");
   // Loop back to the first slide 
@@ -188,6 +188,8 @@ arrows) */
 
   // set caption based on alt
   captionText.innerHTML = dots[slideIndex-1].alt;
+
+}
 
  </script>
 
