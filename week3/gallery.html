@@ -168,26 +168,27 @@ arrows) */
   function showSlides(n){
     let i;
   
-  let slides = document.getElementsByClassName("mySlides");
-  //let dots = document.getElementsByClassName("");
-  // Loop back to the first slide 
-  if (n > slides.length) {slideIndex = 1}
-  // Loop back to the last slide
-  if (n < 1) {slideIndex = slides.length}
-  // Hide all value intially
-  for (i = 0; i <slides.length; i++){
-    slides[i].style.display = "none";
-  }
-  // Remove the active class from all the dots 
-  for (i = 0; i< dots. length ; i++){
-    dots[i].className = dots[i].className.replace("active", "");
-  }
-  // Display the current slide and the "active" class to the current dot 
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += "active";
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText= document.getElementsByID("caption");
+    // Loop back to the first slide 
+    if (n > slides.length) {slideIndex = 1}
+    // Loop back to the last slide
+    if (n < 1) {slideIndex = slides.length}
+    // Hide all value intially
+    for (i = 0; i <slides.length; i++){
+      slides[i].style.display = "none";
+    }
+    // Remove the active class from all the dots 
+    for (i = 0; i< dots. length ; i++){
+      dots[i].className = dots[i].className.replace("active", "");
+    }
+    // Display the current slide and the "active" class to the current dot 
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
 
-  // set caption based on alt
-  captionText.innerHTML = dots[slideIndex-1].alt;
+    // set caption based on alt
+    captionText.innerHTML = dots[slideIndex-1].alt;
 
 }
 
