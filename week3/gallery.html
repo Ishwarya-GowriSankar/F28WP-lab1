@@ -41,14 +41,49 @@
       <h1>Gallery</h1>
 
 		<div class="gallery-container">
-			<img src="images/Slide 1.png" alt="Spa Image 1">
-			<img src="images/Slide 2.png" alt="Spa Image 2">
-			<img src="images/Slide 3.png" alt="Spa Image 3">
-			<img src="images/Slide 4.png" alt="Spa Image 4">
-			<img src="images/Slide 5.png" alt="Spa Image 5">
-			<img src="images/Slide 6.png" alt="Spa Image 6">
-			<img src="images/Slide 7.png" alt="Spa Image 7">
-			<img src="images/Slide 8.png" alt="Spa Image 7">
+      <div class = "mySlides">
+        <div class = "numberText">1 / 8
+          <img src="images/Slide 1.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">2 / 8
+          <img src="images/Slide 2.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">3 / 8
+          <img src="images/Slide 3.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">4 / 8
+          <img src="images/Slide 4.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">5 / 8
+          <img src="images/Slide 5.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">6 / 8
+          <img src="images/Slide 6.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">7 / 8
+          <img src="images/Slide 7.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <div class = "mySlides">
+        <div class = "numberText">8 / 8
+          <img src="images/Slide 8.png" alt="Spa Image 1">
+        </div> 
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">Previous</a>
+      <a class="next" onclick="plusSlides(1)">Next </a>
+      
 		</div>
    <!-- Call to Action -->
    <section class="cta-container">
@@ -67,5 +102,42 @@
     <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
  </div>
+ <script>
+  // Declare a variable to keep track 
+  let SlideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n){
+    showSlides(slideIndex =+ n);
+  }
+  // Function to jump to specific slide in slideshow
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n){
+    let i;
+  }
+  let slides = document.getElementsByClassName("mySlides");
+  //let dots = document.getElementsByClassName("");
+  // Loop back to the first slide 
+  if (n > slides.length) {slideIndex = 1}
+  // Loop back to the last slide
+  if (n < 1) {slideIndex = slides.length}
+  // Hide all value intially
+  for (i = 0; i <slides.length; i++){
+    slides[i].style.display = "none";
+  }
+  // Remove the active class from all the dots 
+  for (i = 0; i< dots. length ; i++){
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  // Display the current slide and the "active" class to the current dot 
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += "active";
+
+  // set caption based on alt
+  captionText.innerHTML = dots[slideIndex-1].alt;
+
+ </script>
+
 </body>
 </html>
