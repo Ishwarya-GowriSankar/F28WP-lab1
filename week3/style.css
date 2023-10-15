@@ -288,7 +288,7 @@ arrows) */
     border-radius: 3px 0 0 3px; 
     margin-bottom: 0px; 
     background-color: rgba(0, 0, 0, 0.8);   
-    bottom: 10px;
+    
 }
       
 .next {
@@ -296,7 +296,7 @@ arrows) */
     border-radius: 3px 0 0 3px;
     margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.8);
-    bottom: 10px;
+    
 
 }   
 /* On hover, add a black background color with a little bit see-through */
