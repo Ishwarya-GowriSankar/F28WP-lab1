@@ -239,11 +239,24 @@ arrows) */
     justify-content: space-between;
     margin-top: 40px;
   }
+  
 
- .container img {
-    width: 24%;
-    margin-bottom: 20px;
+  .mySlides {
+    display: none;
+    width: 100%;
+  }
+  
+  .mySlides img {
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .numberText {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
   }
     /* Hide the images by default */
 .mySlides {
@@ -253,9 +266,8 @@ arrows) */
 .cursor {
     cursor: pointer;
 }
-    /* Next & previous buttons */
-.prev,
-.next {
+/* Next & previous buttons */
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -270,22 +282,19 @@ arrows) */
     -webkit-user-select: none;
 }
     /* Position the "next button" to the right */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;     
+}
+      
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-}
-    /* On hover, add a black background color with a little bit see-through */
+}   /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
     
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
+
     
