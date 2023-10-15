@@ -285,17 +285,22 @@ arrows) */
     /* Position the "next button" to the right */
 .prev {
     left: 0;
-    border-radius: 3px 0 0 3px;     
+    border-radius: 3px 0 0 3px; 
+    margin-bottom: 0px; 
+    background-color: rgba(0, 0, 0, 0.8);   
 }
       
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+
 }   
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(10, 89, 50, 0.8);
 }
     
 
