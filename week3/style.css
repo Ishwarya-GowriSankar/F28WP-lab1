@@ -272,6 +272,7 @@ arrows) */
     cursor: pointer;
     position: absolute;
     top: 40%;
+    bottom: 10px;
     width: auto;
     padding: 16px;
     margin-top: -50px;
