@@ -2,197 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gallery - Wanderlust Voyages</title>
+  <title>Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <style>
-   .gallery-container {
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 40px;
-    }
-
-   .gallery-container img {
-      width: 24%;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    }
-
-  /*Here, will be the Gallery slide show style*/
-* {
-    box-sizing: border-box;
-  }
-.slideshow-img {
-    vertical-align: middle;
-    width: 100%;
-  }
-
-/* Position the image container (needed to position the left and right 
-arrows) */
-.gallery-container {
-  position: relative;
-}
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-</style> -->
+  <style>
+    /* Add your CSS styles here */
+    /* You can define your styles here or link an external CSS file. */
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- <div>
   <header>
     <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
-	</header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="tasks.html">Tasks</a></li>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
     </ul>
-    </nav>
-  
+  </nav>
   <main class="services">
-      <h1>Gallery</h1>
-
-		<div class="container">
-      <div class = "mySlides">
-        <div class = "numberText">1 / 8</div> 
-          <img src="images/1.png" alt="Spa Image 1">
-        
+    <h1>Gallery</h1>
+    <div class="container">
+      <!-- Slideshow images -->
+      <div class="mySlides">
+        <div class="numberText">1 / 8</div>
+        <img src="images/1.png" alt="Image 1">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">2 / 8</div> 
-          <img src="images/2.png" alt="Spa Image 1">
+      <div class="mySlides">
+        <div class="numberText">2 / 8</div>
+        <img src="images/2.png" alt="Image 2">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">3 / 8</div> 
-          <img src="images/3.png" alt="Spa Image 1">
-         
+      <div class="mySlides">
+        <div class="numberText">3 / 8</div>
+        <img src="images/3.png" alt="Image 3">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">4 / 8</div> 
-          <img src="images/4.png" alt="Spa Image 1">
+      <div class="mySlides">
+        <div class="numberText">4 / 8</div>
+        <img src="images/4.png" alt="Image 4">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">5 / 8</div> 
-          <img src="images/5.png" alt="Spa Image 1">
+      <div class="mySlides">
+        <div class="numberText">5 / 8</div>
+        <img src="images/5.png" alt="Image 5">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">6 / 8</div> 
-          <img src="images/6.png" alt="Spa Image 1">
+      <div class="mySlides">
+        <div class="numberText">6 / 8</div>
+        <img src="images/6.png" alt="Image 6">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">7 / 8</div> 
-          <img src="images/7.png" alt="Spa Image 1"> 
+      <div class="mySlides">
+        <div class="numberText">7 / 8</div>
+        <img src="images/7.png" alt="Image 7">
       </div>
-      <div class = "mySlides">
-        <div class = "numberText">8 / 8</div> 
-          <img src="images/8.png" alt="Spa Image 1"> 
+      <div class="mySlides">
+        <div class="numberText">8 / 8</div>
+        <img src="images/8.png" alt="Image 8">
       </div>
       <a class="prev" onclick="plusSlides(-1)">Previous</a>
-      <a class="next" onclick="plusSlides(1)">Next </a>
-      
-		</div>
-   <!-- Call to Action -->
-   <section class="cta-container">
-    <h2>Ready to Experience Our Services?</h2>
-    <p>Join us today and discover the difference we can make for you!</p>
-    <a href="contact.html" class="cta-button">Contact Us Now</a>
-  </section>
-
+      <a class="next" onclick="plusSlides(1)">Next</a>
+    </div>
+    <!-- Call to Action -->
+    <section class="cta-container">
+      <h2>Ready to Experience Our Services?</h2>
+      <p>Join us today and discover the difference we can make for you!</p>
+      <a href="contact.html" class="cta-button">Contact Us Now</a>
+    </section>
   </main>
   <footer>
-      <ul>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li ><a href="https://www.instagram.com/">Instagram</a></li>
-      </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    <ul>
+      <li><a href="https://www.facebook.com/">Facebook</a></li>
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+    </ul>
+    <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
- </div>
- <script>
-  // Declare a variable to keep track 
-  let SlideIndex = 1;
-  showSlides(slideIndex);
-  function plusSlides(n){
-    showSlides(slideIndex += n);
-  }
-  // Function to jump to specific slide in slideshow
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  function showSlides(n){
-    let i;
-  
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("demo");
-    let captionText= document.getElementsByID("caption");
-    // Loop back to the first slide 
-    if (n > slides.length) {slideIndex = 1}
-    // Loop back to the last slide
-    if (n < 1) {slideIndex = slides.length}
-    // Hide all value intially
-    for (i = 0; i <slides.length; i++){
-      slides[i].style.display = "none";
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-    // Remove the active class from all the dots 
-    for (i = 0; i< dots. length ; i++){
-      dots[i].className = dots[i].className.replace("active", "");
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
     }
-    // Display the current slide and the "active" class to the current dot 
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += "active";
 
-    // set caption based on alt
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
 
-}
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
 
- </script>
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
 
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
 </body>
 </html>
