@@ -274,7 +274,7 @@ arrows) */
     top: 40%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
+    margin-top: 20px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -286,7 +286,6 @@ arrows) */
 .prev {
     left: 0;
     border-radius: 3px 0 0 3px; 
-    margin-bottom: 0px; 
     background-color: rgba(0, 0, 0, 0.8);   
     
 }
@@ -294,7 +293,6 @@ arrows) */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-    margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.8);
     
 
