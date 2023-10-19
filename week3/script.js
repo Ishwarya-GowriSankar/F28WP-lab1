@@ -76,9 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
       validatePassword();
       validateConfirmPassword();
   
-      // If all fields are valid, submit the form (in a real-world scenario, you would send data to a server here)
+      // If all fields are valid, submit the form. 
       if (!document.querySelector('.error')) {
-        alert('Registration successful!'); // Replace with your actual form submission code
+        alert('Registration successful!'); 
       }
     });
   });
