@@ -10,4 +10,3 @@ validateConfirmPassword(): Validates the confirm password field by checking for 
 Event listeners are added to each input field (username, email, password, and confirm password) with the event type 'blur'.
 An event listener is added to the form element (form) for the 'submit' event , which prevents the default form submission. 
 All the functions are called at the end to check if all the fields are valid. 
-If there is no error it should display a success message.
