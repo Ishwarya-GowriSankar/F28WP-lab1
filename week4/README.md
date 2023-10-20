@@ -1,0 +1,1 @@
+Just to check if the folder is created from the new device
