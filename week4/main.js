@@ -6,7 +6,7 @@ var myCity = {
 console.log(myCity.name); // Outputs: Dubai
 console.log(myCity.country); // Outputs: UAE
 var myCity = ["Dubai", "UAE", "Dubai Mall"];
-console.log(myCity[0]); // Outputs: Dubai
+console.log(myCity[1].console); // Outputs: Dubai
 
 var myCities = [
     {
