@@ -11,8 +11,8 @@ btn.addEventListener('click', function () {
     //Value of the input field (city name)
     const city = cityInput.value.trim();
 
-    if (city === '') {
-        alert('Please enter a city name.');
+    if (city === '') {// If the city input is nothing
+        alert('Please enter a city name.');// Alert messsage
         return;
     }
 
@@ -21,7 +21,7 @@ btn.addEventListener('click', function () {
 
     fetch(apiUrl)
         .then(response => {
-            if (!response.ok) {
+            if (!response.ok) {// If its not a valid city
                 throw new Error('City not found');
             }
             return response.json();
