@@ -1,10 +1,10 @@
-// API KEY
+//API KEY
 const apiKey = '03a1ffe6faa9f6ce7fc8286878499f6f';
 
 //Variables to store references to elements
 const cityInput = document.getElementById('cityInput');
 const btn = document.getElementById('btn');
-const weatherContainer = document.getElementById('weather-container');
+const weatherContainer = document.getElementById('weather-info');
 
 //Event listener to the button to detect when it is clicked
 btn.addEventListener('click', function () {
@@ -27,12 +27,12 @@ btn.addEventListener('click', function () {
             return response.json();
         })
         .then(data => {
-            //Updating the weather info div with weather details
+            //Updates the weather info div with weather details
             const weatherDescription = data.weather[0].description;
             const temperature = data.main.temp;
             const windSpeed = data.wind.speed;
 
-            //A new weather card and append it to the container
+            // A new weather card and insert it above the existing content
             const weatherCard = document.createElement('div');
             weatherCard.className = 'weather-card';
 
@@ -44,13 +44,13 @@ btn.addEventListener('click', function () {
             `;
 
             weatherCard.innerHTML = weatherHTML;
-            weatherContainer.insertBefore(weatherCard, weatherContainer.firstChild); // Inserts at the beginning
+            weatherContainer.insertBefore(weatherCard, weatherContainer.firstChild); // Inserts above the existing content
 
             // Clears the input field
             cityInput.value = '';
         })
         .catch(error => {
-            // Error handling
+            //Error handling
             if (error.message === 'City not found') {
                 alert('City not found. Please enter a valid city name.');
             } else {
