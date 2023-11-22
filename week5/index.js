@@ -19,13 +19,20 @@ db.connect((error)=>{
         console.log('Mysql Connected...')
     }
 });
+//const publicDirectory = path.join(__dirname, './public');
+//app.set('view engine', 'hbs');
+//app.use(express.static(publicDirectory));
 const publicDirectory = path.join(__dirname, './public');
-app.set('view engine', 'hbs');
 app.use(express.static(publicDirectory));
 
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
-app.get("/",(req, res ) =>{ 
-    //res.send ("<h1>HOMEPAGE</h1>")
-    res.render("index");
+app.get('/', (req, res) => {
+    res.render('profile', { title: 'My Express App' });
 });
+app.get('/register', (req, res) => {
+    res.render('register', { title: 'My Express App' });
+});
+
 app.listen (port, () => {console.log (`Server started on port ${port}`);})
