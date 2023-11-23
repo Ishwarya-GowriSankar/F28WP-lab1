@@ -56,3 +56,59 @@ exports.register = async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 };
+
+exports.login = async (req, res) => {
+  console.log(req.body);
+  const { email, password } = req.body;
+
+  try {
+    const user = await new Promise((resolve, reject) => {
+      db.query('SELECT * FROM users WHERE email = ?', [email], (error, result) => {
+        if (error) {
+          console.log(error);
+          reject(error);
+        }
+        resolve(result[0]);
+      });
+    });
+
+    if (!user) {
+      return res.render('login', {
+        message: 'User not found. Please register.'
+      });
+    }
+
+    const passwordMatch = await bcrypt.compare(password, user.password);
+
+    if (!passwordMatch) {
+      return res.render('login', {
+        message: 'Incorrect password. Please try again.'
+      });
+    }
+
+    res.render('login', {
+      message: 'Login successful!'
+      
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal Server Error");
+  }
+};
+
+exports.logout = (req, res) => {
+
+  req.session.destroy((err) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send("Internal Server Error");
+    } else {
+      
+      res.redirect('/');
+    }
+  });
+};
+
+
+
