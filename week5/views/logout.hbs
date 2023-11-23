@@ -26,8 +26,8 @@
   {{#if message}}
     <h4 class="alert alert-success mt-4">{{message}}</h4>
   {{/if}}
-  {{#if username}}
-    <p>Hey {{username}}, please click the button below to logout:</p>
+  {{#if email}}
+    <p>Hey {{email}}, please click the button below to logout:</p>
   {{/if}}
   <form action="/auth/logout" method="POST">
     <button type="submit" class="btn btn-danger">Logout</button>
