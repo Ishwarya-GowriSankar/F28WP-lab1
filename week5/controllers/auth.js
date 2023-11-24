@@ -86,10 +86,11 @@ exports.login = async (req, res) => {
       });
     }
 
-    res.render('login', {
-      message: 'Login successful!'
-      
-    });
+    // Store the user data in the session
+    req.session.user = user;
+
+    // Redirect to the profile page
+    res.redirect('/profile');
 
   } catch (error) {
     console.error(error);
@@ -109,6 +110,18 @@ exports.logout = (req, res) => {
     }
   });
 };
+exports.profile = (req, res) => {
+  
+  const user = req.session.user;
+
+  if (!user) {
+    
+    return res.redirect('/login');
+  }
+  res.render('profile', { email: user.email });
+};
+
+
 
 
 
